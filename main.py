@@ -103,6 +103,9 @@ def example3(main_str, sub_str):
 
 if __name__ == '__main__':
 
+    # Pythonda debugging çalış
+    # aynı soruyu başka bi yöntemle daha çöz
+
      x = example3("dendendendendendendendendendendendendendendendendendendenden", "den")
      y = example3("rrrrrrrrrrrrrrrrrrrr", "r")
      print(x)
