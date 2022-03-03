@@ -7,10 +7,16 @@ import json
 # we can insert breakpoints
 which is the flexible and newer version of debugging
 
-# three main python debugger commands:
-1: next
-2: step (step into the next line)
-3: continue
+
+# essential pdb Commands
+
+p: print the value fo an expression
+n: continue execution until the next line in the current funciton is reached
+s: execute the current line and stop when the function is called
+c: continue execution and only stop when a breakpoint is occurred.
+h: see a list of available commands
+q : quit the debugger
+
 
 print
 """
@@ -27,6 +33,7 @@ def print_values(input_dict):
         print('{0}: {1}'.format(k, v))
 
 def main():
+    #breakpoint()
     import pdb; pdb.set_trace()
     """Entrypoint to application."""
 
