@@ -1,5 +1,6 @@
 # Intermediate, python exercises.
 
+
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
@@ -75,18 +76,25 @@ def str_finder_():
             i += 1
     return count
 
-def str_finder_2():
+def example3(main_str, sub_str):
 
+    LEN_MAIN = len(main_str)
+    LEN_SUB = len(sub_str)
 
+    # xxyyyyy
+    # yy
+    counter = 0
+    i=0
 
+    while i < LEN_MAIN:
+        if main_str[i: i+LEN_SUB] == sub_str:
+            counter += 1
+            main_str = main_str[0:i] + str(counter) +  main_str[i+LEN_SUB : LEN_MAIN]
+            LEN_MAIN = len(main_str)
+        else:
+            i += 1
 
-
-
-
-
-
-
-
+    return main_str
 
 
 
@@ -94,6 +102,13 @@ def str_finder_2():
 
 
 if __name__ == '__main__':
-    # main()
-    x = str_finder_()
-    print(x)
+
+     x = example3("dendendendendendendendendendendendendendendendendendendenden", "den")
+     y = example3("rrrrrrrrrrrrrrrrrrrr", "r")
+     print(x)
+     print(y)
+
+
+
+
+
