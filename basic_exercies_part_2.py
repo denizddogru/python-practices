@@ -53,6 +53,25 @@ def concat_list_string(some_list):
       result += str(element)
   return result
 
+def counting_in_lists():
+
+    some_list = ['e', 'x', 'a', 'm', 'p', 'l', 'e']
+
+    lst = []
+    num = int(input('How many numbers: '))
+    for n in range(num):
+        numbers = int(input('Enter number '))
+        lst.append(numbers)
+    print("Sum of elements in given list is :", sum(lst))
+
+    result = []
+    for i in some_list:
+        result += list(i)
+
+    print(result)
+
+
+
 
 
 
@@ -69,6 +88,8 @@ def main():
     print(is_different([1, 2, 3, 3, 4, 5, 6]))
     x = []
     list_(x)
+
+    counting_in_lists()
 
 
 if __name__ == '__main__':

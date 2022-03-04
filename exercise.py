@@ -25,7 +25,7 @@ def ex3(a,b):
 # DICTIONARIES - Exercises
 # Ordered, changeable, Does not allow duplicates
 
-# Creating, Accessing, Chanding and Adding, Removing elements, dict comprehension
+# Creating, Accessing, Changing and Adding, Removing elements, dict comprehension
 # membership testing, iterating through dict, and some built-in functions
 
 def dict_example1():
@@ -101,9 +101,48 @@ def clear_list():
     print(orig)
 
 
+# TUPLES
 
+def unpack_tuple():
+    tuplex = (4,8,3)
+    n1,n2,n3 = tuplex
+    #unpack a tuple in variables
+    print(n1 + n2 + n3)
+    #not enough values to unpack
+    #n1,n2,n3,n4=tuplex
 
+def add_item_t():
+    # tuples are immutable, so you cannot add new elements
+    # using merge of tuples with + operator, you can add new elements and
+    # it will create a new tuple
 
+    tuplex = (4,6,3,23,6)
+    tuplex = tuplex +(9,5)
+    tuplex = tuplex + ("deniz", "yaman")
+    print(tuplex)
+
+def convert_t():
+
+    tuplex = (1,2,["yaman","deniz"])
+    tuplex_str = str(tuplex)
+    #print(tuplex_str)
+    print(type(tuplex_str))
+
+    tup = ('e','x', 'e','1','2')
+    new_str = ''.join(tup)
+    print(new_str)
+
+def find_repeating():
+
+    tuplex = (1,2,2,2,3,3,3,4)
+    count = tuplex.count(2)
+    print(count)
+
+def remove_empty_tuples():
+    sample = [(),(),('',), ('a','b')]
+
+    sample = [x for x in sample if x]
+    print(sample)
 
 
 
@@ -122,8 +161,19 @@ if __name__ == '__main__':
     #print_squares()
     #sort_by_key()
     #get_max_min()
-    clear_list()
+    #clear_list()
 
+
+    my_tuple = (1, 2, "deniz")
+    print(my_tuple)
+    tuple_numbers = (1,2,3)
+    tuple_numbers = 1,
+    print(tuple_numbers)
+    unpack_tuple()
+    add_item_t()
+    convert_t()
+    find_repeating()
+    remove_empty_tuples()
 
 
 
